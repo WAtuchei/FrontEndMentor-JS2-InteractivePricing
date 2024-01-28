@@ -1,4 +1,6 @@
-html, body {
+html, body, main {
   min-width: 375px !important;
   min-height: 100dvh;
+  background-color: hsl(230, 100%, 99%);
+  font-family: 'Manrope', sans-serif;
 }

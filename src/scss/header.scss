@@ -1,0 +1,15 @@
+@import "varibles";
+
+header {
+   background-color: $LightGrayishBlue;
+
+   .header-BG {
+      position: absolute;
+      background: transparent url(../../public/images/pattern-circles.svg) no-repeat center center;
+   }
+
+   h1 {
+      font-size: 28px;
+      font-weight: 800;
+   }
+}
