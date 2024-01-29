@@ -1,0 +1,14 @@
+@import "varibles";
+
+.App-body {
+   position: absolute;
+   border-radius: 8px;
+   transform: translateY(-100%);
+
+   > p {
+      color: $GrayishBlue;
+      font-size: calc(9px + 1dvw);
+      font-weight: 700;
+      letter-spacing: .8px;
+   }
+}

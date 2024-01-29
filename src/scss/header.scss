@@ -1,15 +1,24 @@
 @import "varibles";
 
 header {
+   border-radius: 0 0 0 calc(130px + 1dvw);
    background-color: $LightGrayishBlue;
 
    .header-BG {
       position: absolute;
-      background: transparent url(../../public/images/pattern-circles.svg) no-repeat center center;
+      background: transparent url(../../images/pattern-circles.svg) no-repeat center center;
+      background-size: 200px; 
    }
-
    h1 {
-      font-size: 28px;
+      letter-spacing: .5px;
+      color: $DarkBlue;
+      font-size: calc(19px + 1dvw);
       font-weight: 800;
    }
+   p { 
+      color: $GrayishBlue;
+      letter-spacing: .5px;
+      line-height: 1.8;
+   }
+   
 }
