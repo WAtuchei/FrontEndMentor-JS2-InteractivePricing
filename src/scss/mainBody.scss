@@ -2,8 +2,22 @@
 
 .App-body {
    position: absolute;
+   filter: drop-shadow(1px 1px 5px hsla(226, 68%, 95%, 0.815));
    border-radius: 8px;
-   transform: translateY(-100%);
+   transform: translateY(-50%);
+
+   > section {
+      border-top: 1px solid $LightGrayishBlue;
+
+      button {
+         color: $LightGrayishBlue;
+         width: 70%;
+         border-radius: 40px;
+         margin: 2.3rem 0;
+         padding: .7rem;
+         background-color: $DarkBlue;
+      }
+   }
 
    > p {
       color: $GrayishBlue;
