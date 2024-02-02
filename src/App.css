@@ -1,4 +1,4 @@
-html, body, main {
+html, body, #app-container {
   min-width: 375px !important;
   min-height: 100dvh;
   background-color: hsl(230, 100%, 99%);

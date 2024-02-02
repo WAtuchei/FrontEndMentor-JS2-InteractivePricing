@@ -1,4 +1,4 @@
-@import "varibles";
+@import "../varibles";
 
 header {
    border-radius: 0 0 0 calc(130px + 1dvw);
@@ -20,5 +20,4 @@ header {
       letter-spacing: .5px;
       line-height: 1.8;
    }
-   
 }

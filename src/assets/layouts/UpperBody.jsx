@@ -1,18 +1,18 @@
-import "../../scss/components/slider.scss"
+import "../../scss/components/upperBody.scss"
 
-function Slider() {
+function UpperBody() {
    return (
       <>
-         <div className="Paid-container">
-            <input type="range" id="Paid" />
+         <div id="paid-container">
+            <input type="range" id="paid-range" />
             <p><span>$16.00</span> /month</p>
          </div>
          <div className="Billing-container flex">
-            <p>Monthli Billing</p>
+            <p>Monthly Billing</p>
             <input type="checkbox" />
             <p>Yearly Billing</p>
          </div>
       </>
    )
 }
-export default Slider
+export default UpperBody

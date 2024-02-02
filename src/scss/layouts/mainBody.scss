@@ -1,28 +1,24 @@
-@import "varibles";
+@import "../varibles";
 
-.App-body {
+#app-body {
    position: absolute;
-   filter: drop-shadow(1px 1px 5px hsla(226, 68%, 95%, 0.815));
    border-radius: 8px;
    transform: translateY(-50%);
+   filter: drop-shadow(1px 1px 5px hsla(226, 68%, 95%, 0.815));
+   color: $GrayishBlue;
+   font-size: calc(9px + 1dvw);
+   font-weight: 600;
 
-   > section {
+   #lower-app-body {
       border-top: 1px solid $LightGrayishBlue;
 
       button {
          color: $LightGrayishBlue;
          width: 70%;
          border-radius: 40px;
-         margin: 2.3rem 0;
+         margin: 1.8rem 0;
          padding: .7rem;
          background-color: $DarkBlue;
       }
-   }
-
-   > p {
-      color: $GrayishBlue;
-      font-size: calc(9px + 1dvw);
-      font-weight: 700;
-      letter-spacing: .8px;
    }
 }

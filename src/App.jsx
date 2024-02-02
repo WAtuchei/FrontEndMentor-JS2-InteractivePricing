@@ -1,14 +1,16 @@
 import './App.css'
-import Header from './assets/Header'
-import MainBody from './assets/MainBody'
+import Header from './assets/layouts/Header'
+import MainBody from './assets/layouts/MainBody'
 
 function App() {
 
   return (
-    <main className='w-full flex flex-col justify-center items-center'>
+    <div
+      id='app-container'
+      className='w-full flex flex-col justify-center items-center'>
       <Header />
       <MainBody />
-    </main>
+    </div>
   )
 }
 export default App
