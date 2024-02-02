@@ -1,18 +1,16 @@
-import "../../scss/components/upperBody.scss"
+import CheckBox from "../components/CheckBox"
+import Slider from "../components/Slider"
 
 function UpperBody() {
    return (
-      <>
-         <div id="paid-container">
-            <input type="range" id="paid-range" />
-            <p><span>$16.00</span> /month</p>
+      <div className="container flex flex-col justify-between items-stretch">
+         <div className="flex flex-col my-5">
+            <Slider />
          </div>
-         <div className="Billing-container flex">
-            <p>Monthly Billing</p>
-            <input type="checkbox" />
-            <p>Yearly Billing</p>
+         <div className="flex">
+            <CheckBox />
          </div>
-      </>
+      </div>
    )
 }
 export default UpperBody

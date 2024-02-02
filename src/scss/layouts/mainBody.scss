@@ -3,11 +3,17 @@
 #app-body {
    position: absolute;
    border-radius: 8px;
-   transform: translateY(-50%);
+   max-width: clamp(380px, 100%, 450px) !important;
+   transform: translateY(-35%);
    filter: drop-shadow(1px 1px 5px hsla(226, 68%, 95%, 0.815));
    color: $GrayishBlue;
-   font-size: calc(9px + 1dvw);
+   font-size: 16px;
    font-weight: 600;
+   
+   p.uppercase {
+      font-weight: 700;
+      letter-spacing: .8px;
+   }
 
    #lower-app-body {
       border-top: 1px solid $LightGrayishBlue;
