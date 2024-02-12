@@ -1,0 +1,52 @@
+@import "../varibles";
+
+.checkbox-container {
+   font-size: 16px;
+   font-weight: 500;
+
+   #checkSwitch {
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      width: 50px;
+      height: 25px;
+      border-radius: 20px;
+      background-color: $LightGrayishBlueToggle;
+
+      &::before {
+         content: '';
+         position: absolute;
+         width: 18px;
+         height: 18px;
+         transform: translate(20%, 20%);
+         transition: all .5s ease;
+         border-radius: 50%;
+         background-color: $VeryPaleBlue;
+
+         &:hover {
+            background-color: $SoftCyan;
+            transform: translateX(50%);
+         }
+      }
+      &:checked {
+         background-color: $StrongCyan;
+         &::before {
+            transform: translate(150%, 20%);
+         }
+      }
+   }
+
+   .discount {
+      color: $LightRed;
+      background-color: $LightGrayishRed;
+      border-radius: 20px;
+      font-size: 10px;
+      font-weight: 700;
+   }
+}
+
+@media only screen and (min-width: 700px) {
+   .discount::after {
+      content: ' discount';
+   }
+}
