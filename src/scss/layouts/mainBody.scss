@@ -1,30 +1,28 @@
 @import "../varibles";
 
 #app-body {
+   width: clamp(380px, 100%, 560px) !important;
    position: absolute;
    border-radius: 8px;
-   max-width: clamp(380px, 100%, 450px) !important;
    transform: translateY(-35%);
    filter: drop-shadow(1px 1px 5px hsla(226, 68%, 95%, 0.815));
    color: $GrayishBlue;
    font-size: 16px;
    font-weight: 600;
-   
-   p.uppercase {
-      font-weight: 700;
-      letter-spacing: .8px;
-   }
 
    #lower-app-body {
       border-top: 1px solid $LightGrayishBlue;
 
       button {
-         color: $LightGrayishBlue;
-         width: 70%;
+         width: clamp(120px, 70%, 280px);
          border-radius: 40px;
          margin: 1.8rem 0;
          padding: .7rem;
          background-color: $DarkBlue;
+         &:hover, &:active {
+            color: $LightGrayishBlue;
+            transition: all .3s ease;
+         }
       }
    }
 }

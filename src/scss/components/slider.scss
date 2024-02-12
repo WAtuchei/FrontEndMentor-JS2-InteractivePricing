@@ -1,5 +1,10 @@
 @import "../varibles";
 
+p.uppercase {
+   font-weight: 700;
+   letter-spacing: .8px;
+}
+
 input[type="range"] {
    -webkit-appearance: none;
    appearance: none;
@@ -21,9 +26,8 @@ input[type="range"] {
       background-color: $StrongCyan;
       filter: drop-shadow(2px 8px 20px $StrongCyan);
 
-      &:hover, &:active {
-        background-color: hsl(174, 86%, 30%);
-      }
+      &:hover { background-color: hsl(174, 73%, 64%); }
+      &:active { background-color: hsl(174, 86%, 30%); }
    }
    &::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -35,9 +39,8 @@ input[type="range"] {
       background-color: $StrongCyan;
       filter: drop-shadow(2px 8px 20px $StrongCyan);
 
-      &:hover, &:active {
-         background-color: hsl(174, 86%, 30%);
-      }
+      &:hover { background-color: hsl(174, 73%, 64%); }
+      &:active { background-color: hsl(174, 86%, 30%); }
    }
 }
 .progess-bar-container {
