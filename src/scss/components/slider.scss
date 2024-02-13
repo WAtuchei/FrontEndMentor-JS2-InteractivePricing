@@ -1,9 +1,20 @@
 @import "../varibles";
 
+.grid-container {
+   display: grid;
+   grid-template-areas: 
+   'uppercase'
+   'slider'
+   'amount';
+}
+
 p.uppercase {
    font-weight: 700;
    letter-spacing: .8px;
+   grid-area: uppercase;
 }
+.slider-con { grid-area: slider; }
+.amount-con { grid-area: amount; }
 
 input[type="range"] {
    -webkit-appearance: none;
@@ -65,6 +76,15 @@ input[type="range"] {
 
 #amount {
    color: $DarkBlue;
-   font-size: 32px;
+   font-size: 38px;
    font-weight: 800;
+}
+
+@media only screen and (min-width: 700px) {
+   .grid-container {
+      grid-template-areas: 
+      'uppercase amount'
+      'slider slider';
+   }
+   .amount-con { margin: 0 !important; }
 }

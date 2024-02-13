@@ -8,12 +8,7 @@ function MainBody() {
          <section
             id="app-body"
             className="text-center bg-white">
-            <div className="p-8">
-               <p className="uppercase">
-                  100k pageviews
-               </p>
                <UpperBody />
-            </div>
                <LowerBody />
          </section>     
       </div>
