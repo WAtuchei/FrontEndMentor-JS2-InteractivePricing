@@ -2,8 +2,8 @@ function LowerBody() {
   return (
       <div
          id="lower-app-body"
-         className="container my-2 pt-4 px-5 flex flex-col lg:flex-row justify-between items-center">
-         <ul className="flex flex-col justify-center items-center">
+         className="container my-2 pt-4 px-5 md:px-8 flex flex-col md:flex-row justify-between items-center">
+         <ul className="flex flex-col justify-center items-center lg:items-start">
             <li className="flex justify-center mt-2 gap-x-3 lg:gap-x-1 items-center text-center">
                <img 
                   src="../../images/icon-check.svg" 

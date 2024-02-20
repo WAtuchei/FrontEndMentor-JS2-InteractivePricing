@@ -1,6 +1,18 @@
+import { useState, useEffect } from "react"
+import PropTypes from 'prop-types'
 import "../../scss/components/checkBox.scss"
 
-function CheckBox() {
+function CheckBox({ getDiscount }) {
+   const [isDiscount, setIsDiscount] = useState(false)
+
+   CheckBox.propTypes = {
+      getDiscount: PropTypes.func
+   }
+
+   useEffect(() => {
+      getDiscount(isDiscount)
+   }, [isDiscount])
+   
    return (
       <div className="checkbox-container flex mt-3 gap-x-2 text-center">
          <p className="flex justify-center items-center">Monthly Billing</p>
@@ -11,6 +23,7 @@ function CheckBox() {
             <input 
                type="checkbox"
                id="checkSwitch"
+               onChange={(e) => setIsDiscount(e.target.checked) }
             />
          </label>
          <div className="discount-container flex flex-row gap-x-1 justify-center items-center">

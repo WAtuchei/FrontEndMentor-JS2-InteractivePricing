@@ -1,13 +1,18 @@
 import { useState } from "react"
+import PropTypes from 'prop-types'
 import "../../scss/components/slider.scss"
 
-function Slider() {
+function Slider({ isDiscount }) {
    const [amount, setAMount] = useState(16)
    const [rangeWidth, setRangeWidth] = useState(50)
 
    const amountHandler = ( e ) => {
-      setAMount( 8 + (e * 4) )
       setRangeWidth( 25 * e )
+      setAMount( 8 + (e * 4) )
+   }
+
+   Slider.propTypes = {
+      isDiscount: PropTypes.bool
    }
    return (
       <>
@@ -38,7 +43,10 @@ function Slider() {
                <p 
                   id="amount"
                >
-                {`$${amount}.00`}  
+                { isDiscount ? 
+                  `$${amount - (amount * 0.25)}.00` : 
+                  `$${amount}.00`
+                  }  
                </p>
                <p>/ month</p>
             </div>
