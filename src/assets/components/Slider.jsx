@@ -3,9 +3,6 @@ import PropTypes from 'prop-types'
 import "../../scss/components/slider.scss"
 
 function Slider({ isDiscount }) {
-   const [pageviews, setPageViews] = useState('100k')
-   const [amount, setAMount] = useState(16)
-   const [rangeWidth, setRangeWidth] = useState(50)
    const pageView = [
       '10k',
       '50k',
@@ -13,6 +10,9 @@ function Slider({ isDiscount }) {
       '500k',
       '1M'
    ]
+   const [amount, setAMount] = useState(16)
+   const [rangeWidth, setRangeWidth] = useState(50)
+   const [pageViews, setPageViews] = useState(pageView[2])
 
    const amountHandler = ( e ) => {
       setRangeWidth( 25 * e )
@@ -27,7 +27,7 @@ function Slider({ isDiscount }) {
       <>
          <div className="grid-container container">
             <p className="uppercase self-center">
-               {`${pageviews} pageviews`}
+               {`${pageViews} pageviews`}
             </p>
             <div className="slider-con">
                <input
